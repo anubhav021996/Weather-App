@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/stycle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body onload="getlocation()">
+    <div class="container mt-4 ">
+    <div class="row d-flex justify-content-center">
+        <div class="col-6 ml-4">
+            <form class="d-flex">
+                <input class="form-control me-1" type="search" placeholder="Enter City" aria-label="Search" id="location">
+                <button class="btn btn-outline-danger" type="submit" id="search">Search
+                </button>
+              </form>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-danger">Different weather?</button>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-light" id="metric">Metric:⁰C,m/s</button>
+        </div>
+        <div class="col-1">
+            <button type="button" class="btn btn-light" id="imperial">Imperial:⁰F,mph</button>
+        </div>
+    </div>
+    <div class="container row mb-5" id="wheather">
+        <div id="date-time" class="p-fixed">
+          <div id="time"></div>
+          <div>
+              <span id="day"></span>
+          </div>
+        </div>
+        <div class="col-5 bg-dark text-center mt-5" id="wheather-item">
+
+        </div>
+        <div class="col-5" id="wheather-map">
+            <div class="mapouter">
+                <div class="gmap_canvas mt-5 mb-5">
+                    <iframe width="600" height="558 !important" id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-between" id="feature-forecast">
+        <div class="col-2">
+            <p id="day1"></p>
+            <div><img src="hiueh.png" id="img1"></div>
+            <p id="min_temp1">loadding..</p>
+            <p id="max_temp1">loadding..</p>      
+        </div>
+        <div class="col-2">
+            <p id="day2"></p>
+            <div><img src="hiueh.png" id="img2"></div>
+            <p id="min_temp10">loadding..</p>
+            <p id="max_temp10">loadding..</p>      
+        </div>
+        <div class="col-2" >
+            <p id="day3"></p>
+            <div><img src="hiueh.png" id="img3"></div>
+            <p id="min_temp19">loadding..</p>
+            <p id="max_temp19">loadding..</p>      
+        </div>
+        <div class="col-2" >
+            <p id="day4"></p>
+            <div><img src="hiueh.png" id="img4"></div>
+            <p id="min_temp28">loadding..</p>
+            <p id="max_temp28">loadding..</p>      
+        </div>
+        <div class="col-2"  >
+            <p id="day5"></p>
+            <div><img id="img5" src="hiueh.png"></div>
+            <p id="min_temp37">loadding..</p>
+            <p id="max_temp37">loadding..</p>      
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../script/script.js">
+
+</script>

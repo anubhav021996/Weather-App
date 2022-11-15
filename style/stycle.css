@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Zilla+Slab:wght@500&display=swap');
+body {
+  background: url(../1.jpg);
+  color: white;
+}
+#date-container {
+  font-size: 20px;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+.image{
+    width: 40px;
+    height: 35px;
+    background-color: #d7d792;
+    margin-left: -20px;
+    margin-right: 10px;
+}
+.item{
+    display: flex;
+    margin-left: 27%;
+    margin-top: -27px;
+}
+.disc{
+    margin-top:40px
+}
+#time{
+    font-size: 40px;
+}
+#feature-forecast div{
+    background-color: rgb(214, 232, 216);
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#metric:active,#imperial:active{
+    background-color: lightgrey;
+}
